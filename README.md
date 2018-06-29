@@ -71,7 +71,8 @@ Note: In IntelliJ make sure that you use AJC compiler if this wasn't set automat
     public Universal bigBang(int numberOfStars, int numberOfBlackHoles) {
         blackHoles = IntStream.range(0, numberOfBlackHoles).boxed()
                 .map(item -> new BlackHole(randomName("BlackHole-")))
-    ...
+        ...
+    }
 ```
 
 Log ouptut will look like this
@@ -144,6 +145,8 @@ Execution/Response time:  162ms
     public Universal bigBang(int numberOfStars, int numberOfBlackHoles) {
         blackHoles = IntStream.range(0, numberOfBlackHoles).boxed()
                 .map(item -> new BlackHole(randomName("BlackHole-")))
+        ...
+    }
 ```
 
 Log output
