@@ -137,7 +137,10 @@ Execution/Response time:  162ms
 ### LogIt annotation with parameters - example
 
 ```java
-    @LogIt(label = "DEBUG BIG BANG ISSUE", level = Level.DEBUG, ignoreParameters = {"numberOfBlackHoles"}, maskFields = {"name"})
+    @LogIt(label = "DEBUG BIG BANG ISSUE",
+            level = Level.DEBUG,
+            ignoreParameters = {"numberOfBlackHoles"},
+            maskFields = {"type"})
     public Universal bigBang(int numberOfStars, int numberOfBlackHoles) {
         blackHoles = IntStream.range(0, numberOfBlackHoles).boxed()
                 .map(item -> new BlackHole(randomName("BlackHole-")))
@@ -146,53 +149,70 @@ Execution/Response time:  162ms
 Log output
 
 ```json
-13:43:23.259 [main] DEBUG UneasyLogger -
+13:53:15.363 [main] DEBUG UneasyLogger - 
 DEBUG BIG BANG ISSUE
 -> public Universal Universal.bigBang(int numberOfStars, int numberOfBlackHoles<NOT_LOGGED>)
 {
   "numberOfStars": 3
 }
 
-13:43:23.259 [main] DEBUG UneasyLogger -
-Execution/Response time:  0ms
+13:53:15.564 [main] DEBUG UneasyLogger - 
+Execution/Response time:  155ms
 DEBUG BIG BANG ISSUE
 <- Universal Universal.bigBang(int numberOfStars, int numberOfBlackHoles<NOT_LOGGED>)
 {
   "stars": [
     {
-      "planets": [],
-      "name": "XXXMASKEDXXX",
-      "type": "RED_GIANT"
+      "planets": [
+        {
+          "haveSatellites": true,
+          "name": "Planet-7c331df9-0fe5-4ebf-957e-458a7333b6e5"
+        }
+      ],
+      "name": "Star-da910321-eb6f-4702-b361-5baafb786339",
+      "type": "XXXMASKEDXXX"
     },
     {
       "planets": [
         {
           "haveSatellites": true,
-          "name": "XXXMASKEDXXX"
+          "name": "Planet-5f216b9e-3a74-4097-a556-83efe0984c9e"
+        },
+        {
+          "haveSatellites": false,
+          "name": "Planet-b3dd6a9b-7d96-499b-8ba9-ef646842d938"
         }
       ],
-      "name": "XXXMASKEDXXX",
-      "type": "WHITE_DWARF"
+      "name": "Star-b24baf86-a8ad-48b9-a88b-e7673725adcf",
+      "type": "XXXMASKEDXXX"
     },
     {
-      "planets": [],
-      "name": "XXXMASKEDXXX",
-      "type": "SUPERGIANT"
+      "planets": [
+        {
+          "haveSatellites": false,
+          "name": "Planet-9c74dcca-8a16-49cd-b99d-6bafeabb689c"
+        },
+        {
+          "haveSatellites": false,
+          "name": "Planet-bd98faf6-1499-47b2-9175-4c12929761c5"
+        }
+      ],
+      "name": "Star-28ee8435-a4f1-448e-9d4c-324339be9371",
+      "type": "XXXMASKEDXXX"
     }
   ],
   "blackHoles": [
     {
-      "name": "XXXMASKEDXXX"
+      "name": "BlackHole-3db09a77-ca1f-4d23-90ad-6894d1a8cf69"
     },
     {
-      "name": "XXXMASKEDXXX"
+      "name": "BlackHole-494eca83-cdd8-40d9-95c7-ec1d851545f4"
     },
     {
-      "name": "XXXMASKEDXXX"
+      "name": "BlackHole-1f56b7eb-0028-45d1-bea1-d8e2ad2b7888"
     }
   ],
-  "dateOfCreation": "Jun 29, 2018 1:43:23 PM"
+  "dateOfCreation": "Jun 29, 2018 1:53:15 PM"
 }
-
 ```
 
