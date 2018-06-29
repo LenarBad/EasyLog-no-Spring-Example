@@ -1,5 +1,3 @@
-[![Maven Central](https://img.shields.io/maven-central/v/io.lenar/easy-log.svg)](https://maven-badges.herokuapp.com/maven-central/io.lenar/easy-log)
-
 # EasyLog for non-Spring projects - example
 
 This is the example that demonstrates how to use [EasyLog](https://github.com/LenarBad/EasyLog) for non-Spring projects
@@ -11,6 +9,8 @@ This is the example that demonstrates how to use [EasyLog](https://github.com/Le
 <code>io.lenar:easy-log</code>.
 
 Version: <code>0.9.7</code> or higher
+
+Current Version: [![Maven Central](https://img.shields.io/maven-central/v/io.lenar/easy-log.svg)](https://maven-badges.herokuapp.com/maven-central/io.lenar/easy-log)
 
 ### AspectJ Maven Plugin
 
