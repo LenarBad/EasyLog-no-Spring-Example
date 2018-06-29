@@ -45,13 +45,6 @@ Version: <code>0.9.7</code> or higher
 ### Extend EasyLoggerNoSpring
 
 ```java
-import io.lenar.easy.log.EasyLoggerNoSpring;
-import io.lenar.easy.log.annotations.LogIt;
-
-import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.Around;
-import org.aspectj.lang.annotation.Aspect;
-
 @Aspect
 public class MyLogger extends EasyLoggerNoSpring {
 
@@ -64,7 +57,6 @@ public class MyLogger extends EasyLoggerNoSpring {
     public Object methodLog(ProceedingJoinPoint jp, LogIt annotation) throws Throwable {
         return logIt(jp, annotation);
     }
-
 }
 ```
 
