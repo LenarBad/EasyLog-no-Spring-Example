@@ -77,7 +77,7 @@ Note: In IntelliJ make sure that you use AJC compiler if this wasn't set automat
     }
 ```
 
-Log ouptut will look like this
+Log output will look like this
 
 ```json
 13:36:06.021 [main] INFO  UneasyLogger - 
