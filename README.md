@@ -1,6 +1,8 @@
 [![Maven Central](https://img.shields.io/maven-central/v/io.lenar/easy-log.svg)](https://maven-badges.herokuapp.com/maven-central/io.lenar/easy-log)
 
-# Easy Log for non-Spring projects - example
+# EasyLog for non-Spring projects - example
+
+This is the example that demonstrates how to use [EasyLog](https://github.com/LenarBad/EasyLog) for non-Spring projects
 
 ## pom.xml
 
