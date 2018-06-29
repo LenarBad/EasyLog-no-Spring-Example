@@ -1,4 +1,4 @@
-package io.lenar.examples;
+package io.lenar.examples.log;
 
 import io.lenar.easy.log.EasyLoggerNoSpring;
 import io.lenar.easy.log.annotations.LogIt;
