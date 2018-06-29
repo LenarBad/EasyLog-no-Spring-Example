@@ -1,10 +1,10 @@
 package io.lenar.examples;
 
-import io.lenar.examples.model.Universal;
+import io.lenar.examples.model.Universe;
 
 public class App {
 
     public static void main(String[] args) {
-        new Universal(3, 3);
+        new Universe(3, 3);
     }
 }

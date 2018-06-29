@@ -9,7 +9,7 @@ import java.util.stream.IntStream;
 
 import io.lenar.easy.log.annotations.LogIt;
 
-public class Universal {
+public class Universe {
 
     private List<Star> stars;
 
@@ -17,12 +17,12 @@ public class Universal {
 
     private Date dateOfCreation;
 
-    public Universal(int numberOfStars, int numberOfBlackHoles) {
+    public Universe(int numberOfStars, int numberOfBlackHoles) {
         bigBang(numberOfStars, numberOfBlackHoles);
     }
 
     @LogIt
-    public Universal bigBang(int numberOfStars, int numberOfBlackHoles) {
+    public Universe bigBang(int numberOfStars, int numberOfBlackHoles) {
         blackHoles = IntStream.range(0, numberOfBlackHoles).boxed()
                 .map(item -> new BlackHole(randomName("BlackHole-")))
                 .collect(Collectors.toList());

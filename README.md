@@ -68,7 +68,7 @@ Note: In IntelliJ make sure that you use AJC compiler if this wasn't set automat
 
 ```java
     @LogIt
-    public Universal bigBang(int numberOfStars, int numberOfBlackHoles) {
+    public Universe bigBang(int numberOfStars, int numberOfBlackHoles) {
         blackHoles = IntStream.range(0, numberOfBlackHoles).boxed()
                 .map(item -> new BlackHole(randomName("BlackHole-")))
         ...
@@ -79,7 +79,7 @@ Log ouptut will look like this
 
 ```json
 13:36:06.021 [main] INFO  UneasyLogger - 
--> public Universal Universal.bigBang(int numberOfStars, int numberOfBlackHoles)
+-> public Universe Universe.bigBang(int numberOfStars, int numberOfBlackHoles)
 {
   "numberOfStars": 3,
   "numberOfBlackHoles": 3
@@ -87,7 +87,7 @@ Log ouptut will look like this
 
 13:36:06.205 [main] INFO  UneasyLogger - 
 Execution/Response time:  162ms
-<- Universal Universal.bigBang(int numberOfStars, int numberOfBlackHoles)
+<- Universe Universe.bigBang(int numberOfStars, int numberOfBlackHoles)
 {
   "stars": [
     {
@@ -142,7 +142,7 @@ Execution/Response time:  162ms
             level = Level.DEBUG,
             ignoreParameters = {"numberOfBlackHoles"},
             maskFields = {"type"})
-    public Universal bigBang(int numberOfStars, int numberOfBlackHoles) {
+    public Universe bigBang(int numberOfStars, int numberOfBlackHoles) {
         blackHoles = IntStream.range(0, numberOfBlackHoles).boxed()
                 .map(item -> new BlackHole(randomName("BlackHole-")))
         ...
@@ -154,7 +154,7 @@ Log output
 ```json
 13:53:15.363 [main] DEBUG UneasyLogger - 
 DEBUG BIG BANG ISSUE
--> public Universal Universal.bigBang(int numberOfStars, int numberOfBlackHoles<NOT_LOGGED>)
+-> public Universe Universe.bigBang(int numberOfStars, int numberOfBlackHoles<NOT_LOGGED>)
 {
   "numberOfStars": 3
 }
@@ -162,7 +162,7 @@ DEBUG BIG BANG ISSUE
 13:53:15.564 [main] DEBUG UneasyLogger - 
 Execution/Response time:  155ms
 DEBUG BIG BANG ISSUE
-<- Universal Universal.bigBang(int numberOfStars, int numberOfBlackHoles<NOT_LOGGED>)
+<- Universe Universe.bigBang(int numberOfStars, int numberOfBlackHoles<NOT_LOGGED>)
 {
   "stars": [
     {
