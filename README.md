@@ -20,12 +20,12 @@ Version: <code>0.9.7</code> or higher
                 <artifactId>aspectj-maven-plugin</artifactId>
                 <version>1.11</version>
                 <configuration>
-                    <complianceLevel>${java.source-target.version}</complianceLevel>
-                    <source>${java.source-target.version}</source>
-                    <target>${java.source-target.version}</target>
+                    <complianceLevel>1.8</complianceLevel>
+                    <source>1.8</source>
+                    <target>1.8</target>
                     <verbose>true</verbose>
                     <Xlint>ignore</Xlint>
-                    <encoding>${project.build.sourceEncoding}</encoding>
+                    <encoding>UTF-8</encoding>
                 </configuration>
                 <executions>
                     <execution>
