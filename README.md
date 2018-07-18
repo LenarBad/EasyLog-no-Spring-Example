@@ -1,3 +1,5 @@
+[https://lenarbad.github.io/EasyLog/](https://lenarbad.github.io/EasyLog/)
+
 # EasyLog for non-Spring projects - example
 
 This is the example that demonstrates how to use [EasyLog](https://github.com/LenarBad/EasyLog) for non-Spring projects
