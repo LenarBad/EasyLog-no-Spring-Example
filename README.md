@@ -1,4 +1,12 @@
-[https://lenarbad.github.io/EasyLog/](https://lenarbad.github.io/EasyLog/)
+<p align="center">
+  <a href="https://lenarbad.github.io/easylog/">EasyLog Site</a> | 
+  <a href="https://github.com/LenarBad/easylog">Source Code</a>
+  <br>
+  <a href="https://maven-badges.herokuapp.com/maven-central/io.lenar/easy-log">
+    <image src="https://img.shields.io/maven-central/v/io.lenar/easy-log.svg" alt="Maven Central">
+  </a>
+
+</p>
 
 # EasyLog for non-Spring projects - example
 
@@ -6,13 +14,6 @@ This is the example that demonstrates how to use [EasyLog](https://github.com/Le
 
 ## pom.xml
 
-### Maven dependency
-
-<code>io.lenar:easy-log</code>.
-
-Version: <code>0.9.7</code> or higher
-
-Current Version: [![Maven Central](https://img.shields.io/maven-central/v/io.lenar/easy-log.svg)](https://maven-badges.herokuapp.com/maven-central/io.lenar/easy-log)
 
 ### AspectJ Maven Plugin
 
