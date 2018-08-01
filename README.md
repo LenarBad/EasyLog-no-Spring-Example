@@ -85,10 +85,8 @@ Log output will look like this
 ```json
 13:36:06.021 [main] INFO  UneasyLogger - 
 -> public Universe Universe.bigBang(int numberOfStars, int numberOfBlackHoles)
-{
-  "numberOfStars": 3,
-  "numberOfBlackHoles": 3
-}
+"numberOfStars": 3,
+"numberOfBlackHoles": 3
 
 13:36:06.205 [main] INFO  UneasyLogger - 
 Execution/Response time:  162ms
@@ -160,9 +158,7 @@ Log output
 13:53:15.363 [main] DEBUG UneasyLogger - 
 DEBUG BIG BANG ISSUE
 -> public Universe Universe.bigBang(int numberOfStars, int numberOfBlackHoles<NOT_LOGGED>)
-{
-  "numberOfStars": 3
-}
+"numberOfStars": 3
 
 13:53:15.564 [main] DEBUG UneasyLogger - 
 Execution/Response time:  155ms
