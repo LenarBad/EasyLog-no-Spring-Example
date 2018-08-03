@@ -9,6 +9,7 @@ import java.util.stream.IntStream;
 
 import io.lenar.easy.log.annotations.LogIt;
 
+@LogIt(label = "Class Level")
 public class Universe {
 
     private List<Star> stars;
@@ -21,7 +22,7 @@ public class Universe {
         bigBang(numberOfStars, numberOfBlackHoles);
     }
 
-    @LogIt
+    @LogIt(label = "Method Level", maskFields = {"name"})
     public Universe bigBang(int numberOfStars, int numberOfBlackHoles) {
         blackHoles = IntStream.range(0, numberOfBlackHoles).boxed()
                 .map(item -> new BlackHole(randomName("BlackHole-")))
@@ -44,15 +45,6 @@ public class Universe {
         return IntStream.range(0, (int) (Math.random() * 3)).boxed()
                 .map(item -> new Planet(randomName("Planet-"), new Random().nextBoolean()))
                 .collect(Collectors.toList());
-    }
-
-    public String toBeLogged(String param) {
-        return param + " :: " + param;
-    }
-
-    @LogIt
-    public String anotherMethodToBeLogged(String param) {
-        return param + " :!!!: " + param;
     }
 
     public List<Star> getStars() {
