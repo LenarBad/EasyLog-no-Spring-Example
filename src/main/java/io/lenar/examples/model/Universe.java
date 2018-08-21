@@ -8,8 +8,8 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 import io.lenar.easy.log.annotations.LogIt;
+import io.lenar.examples.exceptions.UnreachableEventException;
 
-@LogIt(label = "Class Level")
 public class Universe {
 
     private List<Star> stars;
@@ -41,10 +41,16 @@ public class Universe {
         return prefix + UUID.randomUUID().toString();
     }
 
+    @LogIt
     private List<Planet> randomPlanets() {
         return IntStream.range(0, (int) (Math.random() * 3)).boxed()
                 .map(item -> new Planet(randomName("Planet-"), new Random().nextBoolean()))
                 .collect(Collectors.toList());
+    }
+
+    @LogIt
+    public List<Star> getStarsBeforeBigBang() throws UnreachableEventException {
+        throw new UnreachableEventException();
     }
 
     public List<Star> getStars() {
